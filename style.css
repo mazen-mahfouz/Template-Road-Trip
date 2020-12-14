@@ -1,0 +1,359 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: 0;
+}
+
+/* start nav */
+
+#nav {
+  width: 100%;
+  height: 7.9vh;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+#nav-left {
+  width: 75%;
+  height: 100%;
+  float: left;
+}
+
+#nav-left p {
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-left: 8%;
+}
+
+#nav-left a {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+}
+
+#nav-left span {
+  color: #ffffff;
+  font-size: 14.2px;
+  font-weight: 100;
+}
+
+#nav-right {
+  width: 25%;
+  height: 100%;
+  float: right;
+  text-align: center;
+}
+
+#nav-right button {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+#nav-right i {
+  font-size: 14px;
+  color: white;
+  background: #3b3b3be3;
+  padding: 11px;
+  border-radius: 100%;
+  margin-left: 76%;
+}
+
+#bar-side {
+  position: fixed;
+  width: 80%;
+  height: 100vh;
+  z-index: 99999;
+  right: -100%;
+  top: 0;
+  background: #f64242;
+  text-align: right;
+  transition: .5s;
+}
+
+#bar-side i {
+  color: white;
+  font-size: 20px;
+  margin-top: 24px;
+  margin-right: 7%;
+  font-weight: bold;
+}
+
+#bar-side ul {
+  text-align: left;
+}
+
+#bar-side li {
+  color: #e4e4e4;
+  margin-left: 9.6%;
+  margin-top: 4%;
+  margin-bottom: 6.8%;
+  font-size: 15.5px;
+  font-weight: 100;
+}
+
+#bar-side hr {
+  width: 82%;
+  background-color: bisque;
+  opacity: .3;
+  margin-bottom: 12px;
+}
+
+/* end nav */
+
+/* start header */
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/img1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+  text-align: -webkit-center;
+}
+
+#header-backg {
+  background-color: black;
+  opacity: 1;
+  transition: 8s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#header-conn {
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 83%;
+}
+
+#header-conn h1 {
+  color: rgb(255 255 255 / 76%);
+  font-family: "Lobster", cursive;
+  font-size: 54.5px;
+  line-height: 1.1;
+  margin-top: 13.8%;
+  margin-left: 0%;
+  z-index: 1;
+  transition: 5s;
+  opacity: 0;
+}
+
+/* end header */
+
+/* start about1 */
+
+.about1 {
+  width: 100%;
+  height: 97vh;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: -webkit-center;
+}
+
+#about1-backg {
+  background-color: black;
+  opacity: 0.45;
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about1-conn {
+  width: 90%;
+  height: 90%;
+  background: #00000085;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 1%;
+  transition: 2s;
+  opacity: 0;
+}
+
+#about1-conn-top {
+  width: 100%;
+  height: 20%;
+}
+
+#about1-conn-top h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  transform: translateY(18px);
+  width: 90%;
+  line-height: 1.5;
+}
+
+#about1-conn-center {
+  width: 100%;
+  height: 76%;
+}
+
+#about1-conn-center p {
+  width: 89%;
+  font-size: 15.4px;
+  transform: translateY(3px);
+  line-height: 1.7;
+  color: #b5b5b5;
+  margin-bottom: 11%;
+
+}
+
+#about1-conn-center button {
+  color: white;
+  font-size: 15px;
+  border: 2px solid rgba(144, 144, 144, 0.25);
+  padding: 11px 29%;
+  border-radius: 4px;
+  background: transparent;
+  font-weight: bold;
+}
+
+/* end about1 */
+
+@media screen and (min-width: 1024px) {
+
+  #nav {
+    height: 10vh;
+    background: none;
+  }
+
+  #nav-left p {
+    margin-left: 2.3%;
+  }
+
+  #nav-left a {
+    font-size: 18.5px;
+  }
+
+  #nav-left span {
+    font-size: 15.2px;
+  }
+
+  #nav-right {
+    text-align: -webkit-right;
+  }
+
+
+  #nav-right i {
+    font-size: 14px;
+    background: #aeaeaee3;
+    margin-left: -36%;
+  }
+
+  #header {
+    background-position: center;
+  }
+
+  #header-conn h1 {
+    font-size: 102.5px;
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+
+  .about1 {
+    height: 101vh;
+    background-position: center;
+  }
+
+  .about1-conn {
+    width: 63%;
+    height: 47%;
+    top: 27%;
+  }
+
+  #about1-conn-top {
+    height: 35%;
+  }
+
+  #about1-conn-top h1 {
+    font-size: 25.5px;
+    transform: translateY(59px);
+    width: 90%;
+  }
+
+  #about1-conn-center {
+    height: 70%;
+  }
+
+  #about1-conn-center p {
+    width: 85%;
+    font-size: 14px;
+    transform: translateY(3px);
+    line-height: 1.7;
+    color: #b5b5b5;
+    margin-bottom: auto;
+  }
+
+  #about1-conn-center button {
+    font-size: 13px;
+    padding: 13px 2.5%;
+    margin-top: 4%;
+  }
+
+  #bar-side {
+    width: 21%;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
